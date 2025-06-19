@@ -5,4 +5,4 @@ Ini versi lite-nya — tampilannya mirip tapi tidak sama persis.
 
 Aplikasi ini dibuat sebagai tugas mata kuliah Mobile Programming, menggunakan Flutter dan Dart.
 
-Masih dalam tahap pengembangan awal.
+Masih dalam tahap pengembangan:)
