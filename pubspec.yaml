@@ -1,5 +1,5 @@
-name: listview_tabview
-description: "A new Flutter project."
+name: liteline
+description: 'A new Flutter project.'
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.7.0
+  sdk: '>=3.0.0 <4.0.0' # Mengganti ^3.7.0 menjadi range yang lebih umum untuk Dart 3.x
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -30,11 +30,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http: ^1.2.1
   font_awesome_flutter: ^10.7.0
+  cupertino_icons: ^1.0.8
+  intl: ^0.17.0
+  shared_preferences: ^2.2.3 # Untuk preference
+  google_maps_flutter: ^2.6.1 # **INI YANG DIKOREKSI DARI Maps_flutter**
+  geolocator: ^11.0.0
+  image_picker: ^1.1.2 # Untuk Camera
+  permission_handler: ^11.3.1 # Untuk Camera dan lokasi
+  sms_autofill: ^2.3.0 # Untuk SMS autofill
+  charts_flutter: ^0.12.0 # Untuk grafik (deprecated, akan saya rekomendasikan yang lebih baru)
+  fl_chart: ^0.68.0 # Untuk grafik (saya rekomendasikan ini)
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.8
 
 dev_dependencies:
   flutter_test:
@@ -52,7 +62,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
